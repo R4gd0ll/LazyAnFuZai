@@ -52,7 +52,7 @@ chmod 777 check.sh
 3. 导出word文档、导出config.conf文件
 4. 导入config.conf文件，可在工具中查看具体事件事例
 
-<img src="C:\Users\34540\Documents\WeChat Files\wxid_kzbocsvasgqc22\FileStorage\Temp\124df80140badb773687ac604ac5d91.png" alt="124df80140badb773687ac604ac5d91" style="zoom:67%;" />
+<img src="https://github.com/R4gd0ll/LazyAnFuZai/blob/main/image/124df80140badb773687ac604ac5d91.png" alt="124df80140badb773687ac604ac5d91" style="zoom:67%;" />
 
 报告样本
 
