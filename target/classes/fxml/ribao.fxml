@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ribaoController">
+    <children>
+        <ListView fx:id="shili" layoutX="37.0" layoutY="242.0" onMouseClicked="#listview_clicked" prefHeight="538.0" prefWidth="200.0" />
+        <TextField fx:id="faxian" layoutX="358.0" layoutY="283.0" prefHeight="30.0" prefWidth="288.0" />
+        <Text layoutX="107.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="共监测发现攻击事件             起，失败            起，攻击成功             起。受攻击资产数量：           个，失陷： " wrappingWidth="991.908203125">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <TextField fx:id="jiben1" layoutX="292.0" layoutY="27.0" prefHeight="30.0" prefWidth="67.0" />
+        <TextField fx:id="jiben4" layoutX="903.0" layoutY="27.0" prefHeight="30.0" prefWidth="67.0" />
+        <TextField fx:id="jiben3" layoutX="640.0" layoutY="27.0" prefHeight="30.0" prefWidth="67.0" />
+        <TextField fx:id="jiben2" layoutX="446.0" layoutY="27.0" prefHeight="30.0" prefWidth="67.0" />
+        <TextField fx:id="jiben5" layoutX="1074.0" layoutY="27.0" prefHeight="30.0" prefWidth="67.0" />
+        <Text layoutX="256.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="发现时间 :">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <TextField fx:id="gongji" layoutX="358.0" layoutY="326.0" prefHeight="30.0" prefWidth="288.0" />
+        <Text layoutX="256.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="攻击时间 :">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <TextField fx:id="leixing" layoutX="358.0" layoutY="366.0" prefHeight="30.0" prefWidth="288.0" />
+        <Text layoutX="256.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="攻击类型 :">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <TextField fx:id="baobiao" editable="false" layoutX="358.0" layoutY="471.0" prefHeight="30.0" prefWidth="438.0" />
+        <Text layoutX="256.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="攻击报表 :">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Button fx:id="jietu1" layoutX="829.0" layoutY="471.0" mnemonicParsing="false" onAction="#setJietu1" text="截图2" />
+        <TextField fx:id="qingbao" editable="false" layoutX="358.0" layoutY="521.0" prefHeight="30.0" prefWidth="438.0" />
+        <Text layoutX="256.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="威胁情报 :">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Button fx:id="jietu2" layoutX="829.0" layoutY="521.0" mnemonicParsing="false" onAction="#setJietu2" text="截图3" />
+        <TextField fx:id="fengjin1" editable="false" layoutX="389.0" layoutY="89.0" prefHeight="30.0" prefWidth="438.0" />
+        <Text layoutX="233.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="防火墙封禁IP">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Button fx:id="fengjin" layoutX="860.0" layoutY="89.0" mnemonicParsing="false" onAction="#setJietu3" text="封禁截图" />
+        <Button fx:id="tijiao" layoutX="702.0" layoutY="283.0" mnemonicParsing="false" onAction="#submit" prefHeight="63.0" prefWidth="189.0" text="提交事件">
+            <font>
+                <Font size="34.0" />
+            </font>
+        </Button>
+      <Button fx:id="tijiao2" layoutX="472.0" layoutY="139.0" mnemonicParsing="false" onAction="#setTijiao2" prefHeight="68.0" prefWidth="262.0" text="提交基本情况">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <Button fx:id="tijiao3" layoutX="436.0" layoutY="574.0" mnemonicParsing="false" onAction="#setdaochu" prefHeight="68.0" prefWidth="262.0" text="导出报告">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <TextField fx:id="attip" layoutX="358.0" layoutY="242.0" prefHeight="30.0" prefWidth="288.0" />
+      <Text layoutX="256.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="攻击ip:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField editable="false" layoutX="358.0" layoutY="420.0" prefHeight="30.0" prefWidth="438.0" fx:id="xiangqing" />
+      <Text layoutX="256.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="攻击详情 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="jietu11" layoutX="829.0" layoutY="420.0" mnemonicParsing="false" onAction="#setJietu11" text="截图1" />
+      <TextArea fx:id="info" editable="false" layoutX="925.0" layoutY="227.0" prefHeight="557.0" prefWidth="329.0" />
+      <Button fx:id="IC" layoutX="686.0" layoutY="695.0" mnemonicParsing="false" onAction="#ConfigIn" text="导入config" />
+      <Button fx:id="OC" layoutX="686.0" layoutY="750.0" mnemonicParsing="false" onAction="#ConfigOut" text="导出config" />
+      <TextField fx:id="configName" editable="false" layoutX="326.0" layoutY="695.0" prefHeight="30.0" prefWidth="342.0" />
+    </children>
+</AnchorPane>

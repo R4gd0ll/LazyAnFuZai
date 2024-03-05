@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.stage.Stage?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="920.0" minWidth="1400.0" prefHeight="798.0" prefWidth="998.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+
+  <children>
+
+
+    <JFXTabPane prefHeight="894.0" prefWidth="1400.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+
+        <Tab text="简易系统检查" style="-fx-font-family: Arial,'Microsoft YaHei',Serif">
+          <content>
+            <fx:include source="baseCheck.fxml" />
+          </content>
+        </Tab>
+        <Tab text="值守日报报表" style="-fx-font-family: Arial,'Microsoft YaHei',Serif">
+          <content>
+            <fx:include source="ribao.fxml" />
+          </content>
+        </Tab>
+
+      </tabs>
+    </JFXTabPane>
+  </children>
+
+</VBox>

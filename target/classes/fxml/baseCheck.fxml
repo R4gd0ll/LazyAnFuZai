@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.baseCheckController">
+   <children>
+      <ListView fx:id="checkthings" layoutX="30.0" layoutY="88.0" onMouseClicked="#listview_clicked" prefHeight="690.0" prefWidth="264.0" />
+      <TextArea fx:id="check" layoutX="354.0" layoutY="188.0" prefHeight="254.0" prefWidth="394.0" />
+      <TextArea fx:id="nowthings" layoutX="802.0" layoutY="351.0" prefHeight="427.0" prefWidth="451.0" />
+      <Text layoutX="354.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="系统检查情况记录" textAlignment="CENTER" wrappingWidth="364.30029296875">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <Text layoutX="120.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="检查项">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="940.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="现场记录情况" wrappingWidth="218.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="971.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="检查结果">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="result" layoutX="802.0" layoutY="162.0" prefHeight="110.0" prefWidth="451.0" />
+      <Button fx:id="file" layoutX="674.0" layoutY="88.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="30.0" prefWidth="69.0" text="文件" />
+      <Button fx:id="submit" layoutX="770.0" layoutY="88.0" mnemonicParsing="false" onAction="#submit" prefHeight="30.0" prefWidth="80.0" text="提交" />
+      <Button fx:id="out" layoutX="663.0" layoutY="142.0" mnemonicParsing="false" onAction="#Out" text="导出报告" />
+      <TextField fx:id="fileN" layoutX="359.0" layoutY="88.0" prefHeight="30.0" prefWidth="298.0" />
+      <TextArea fx:id="info" layoutX="358.0" layoutY="498.0" prefHeight="254.0" prefWidth="394.0" />
+      <Button fx:id="bash" layoutX="359.0" layoutY="142.0" mnemonicParsing="false" onAction="#getbash" text="生成检查脚本" />
+      <Button fx:id="mod" layoutX="1158.0" layoutY="299.0" mnemonicParsing="false" onAction="#mod" text="修改后保存" />
+      <RadioButton fx:id="yes" layoutX="901.0" layoutY="132.0" mnemonicParsing="false" onAction="#handleY" text="符合" />
+      <RadioButton fx:id="no" layoutX="1077.0" layoutY="132.0" mnemonicParsing="false" onAction="#handleN" text="不符合" />
+   </children>
+</AnchorPane>
