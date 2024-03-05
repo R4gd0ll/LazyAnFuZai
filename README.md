@@ -56,7 +56,7 @@ chmod 777 check.sh
 
 报告样本
 
-<img src="C:\Users\34540\Documents\WeChat Files\wxid_kzbocsvasgqc22\FileStorage\Temp\4d7663fffdf964caf781425b6c7bece.png" alt="4d7663fffdf964caf781425b6c7bece" style="zoom:67%;" />
+<img src="https://github.com/R4gd0ll/LazyAnFuZai/blob/main/image/4d7663fffdf964caf781425b6c7bece.png" alt="4d7663fffdf964caf781425b6c7bece" style="zoom:67%;" />
 
 导入config.conf文件
 
